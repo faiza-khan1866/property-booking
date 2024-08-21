@@ -1,0 +1,129 @@
+/*=======  CONTACT   =======*/
+.contact-part {
+  /*=======  CONTACT Info box =======*/
+  .contact-info {
+    .info-box {
+      padding: 35px 30px;
+      background-color: $white;
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 40px 1fr;
+      margin-bottom: 20px;
+      grid-column-gap: 30px;
+      box-shadow: 0px 3px 6px #00000020;
+      @include transition(0.3s);
+      height: 90%;
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      @media #{$lg} {
+        padding: 35px 30px;
+        grid-template-columns: 30px 1fr;
+      }
+      @media #{$sm} {
+        display: block;
+        padding: 30px 20px;
+      }
+      .icon {
+        font-size: 35px;
+        color: $primary-color;
+        @media #{$sm} {
+          margin-bottom: 15px;
+        }
+      }
+      .desc {
+        word-break: break-all;
+        h4 {
+          font-size: 20px;
+          margin-bottom: 10px;
+          @media #{$sm} {
+            font-size: 18px;
+          }
+        }
+        p {
+          color: $main-bg;
+        }
+        a {
+          color: $main-bg;
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  /*=======  CONTACT Map =======*/
+
+  .contact-maps {
+    border: 0;
+    height: 400px;
+    width: 100%;
+  }
+
+  /*=======  CONTACT Form=======*/
+
+  .contact-form {
+    textarea {
+      resize: none;
+    }
+    label {
+      font-size: 15px;
+      font-weight: 400;
+      color: $black;
+    }
+    input,
+    textarea {
+      border: 1px solid $borderColor;
+      border-right: 0;
+      background: $light-gray;
+      border-radius: 0;
+      color: $black;
+      font-size: 15px;
+      font-weight: 400;
+      &::placeholder {
+        color: rgba(91, 108, 143, 0.5);
+      }
+      &:focus {
+        box-shadow: none;
+        border: 1px solid $primary-color;
+      }
+    }
+
+    input,
+    textarea {
+      height: auto;
+      padding: calc(0.55rem + 2px) calc(0.75rem + 2px);
+    }
+
+    .input-group-text {
+      border: 1px solid $borderColor;
+      border-left: 0;
+      border-radius: 0;
+      color: $primary-color;
+      background: $light-gray;
+    }
+
+    .btn_submit {
+      border-radius: 15px;
+      background-color: $primary-color;
+      border-color: $primary-color;
+      color: $white;
+      text-transform: capitalize;
+      font-weight: 500;
+      font-size: 18px;
+      padding: 0.5rem 2rem;
+      margin-top: 1rem;
+      @include transition(0.4s);
+      &:focus {
+        outline: 0;
+        box-shadow: none;
+      }
+      &:hover {
+        color: $primary-color;
+        background: $white;
+      }
+    }
+  }
+}

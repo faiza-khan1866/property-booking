@@ -1,0 +1,122 @@
+/*=======  property Rooms List   =======*/
+.property_rooms_section {
+  .property_rooms_box {
+    overflow: hidden;
+    .property_rooms_img {
+      height: 300px;
+      width: 100%;
+      position: relative;
+      @media #{$sm, $md} {
+        height: auto;
+      }
+    }
+
+    .wishlisticon {
+      font-size: 20px;
+      position: absolute;
+      right: 30px;
+      top: 11px;
+      z-index: 1;
+      i {
+        color: $white;
+      }
+    }
+
+    ul.slick-dots {
+      position: absolute;
+      left: 50%;
+      bottom: 15px;
+      transform: translateX(-50%);
+      li {
+        display: inline-block;
+        cursor: pointer;
+        button {
+          font-size: 0;
+          border: 0;
+          background: rgba(255, 255, 255, 0.3);
+          width: 10px;
+          height: 10px;
+          margin: 0 5px;
+          border-radius: 100%;
+          @include transition(0.3s);
+        }
+        &.slick-active {
+          button {
+            background: $white;
+          }
+        }
+      }
+    }
+
+    .property_rooms_desc {
+      padding: 1rem;
+      .property_rooms_meta {
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span {
+          font-size: 15px;
+          font-weight: 500;
+          text-transform: capitalize;
+          i {
+            margin-right: 10px;
+            color: $primary_color;
+          }
+        }
+      }
+      h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        letter-spacing: 0px;
+        a {
+          color: $main-bg;
+        }
+        @media #{$sm} {
+          font-size: 20px;
+        }
+      }
+      .category {
+        font-size: $pfont;
+        color: $main-bg;
+        margin-bottom: 5px;
+        font-weight: 500;
+        @media #{$sm} {
+          font-size: $pmblfont;
+        }
+      }
+      .show_price {
+        background: transparent;
+        border: 0;
+        color: $primary-color;
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid $primary-color;
+        margin-bottom: 1rem;
+        font-size: 15px;
+        &:focus {
+          outline: 0;
+        }
+      }
+      .price {
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        color: $main-bg;
+        font-style: italic;
+        @media #{$sm} {
+          font-size: 15px;
+        }
+      }
+      .location {
+        font-size: 15px;
+        color: $main-bg;
+        margin-bottom: 10px;
+        font-weight: 500;
+      }
+      .main-btn.btn-filled {
+        box-shadow: none;
+      }
+    }
+  }
+}

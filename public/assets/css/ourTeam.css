@@ -1,0 +1,148 @@
+#ourTeam .cardContainer {
+  position: relative;
+  margin-top: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+#ourTeam .cardContainer .card {
+  overflow: hidden;
+  border: none;
+  margin: 10px 10px;
+  border-radius: 5px;
+  position: relative;
+  background-color: transparent;
+  float: left;
+  box-sizing: border-box;
+  min-height: 400px;
+}
+#ourTeam .cardContainer .card .imgBx {
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+#ourTeam .cardContainer .card .imgBx img {
+  width: 100%;
+  min-height: 400px;
+  transition: 0.5s;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.75;
+}
+#ourTeam .cardContainer .card:hover .imgBx img {
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+#ourTeam .cardContainer .card:hover .cardFooter h4 {
+  transition: 0.2s;
+  margin-bottom: -2px;
+}
+#ourTeam .cardContainer .card:hover .cardFooter p {
+  transition: 0.2s;
+  margin-bottom: -7px;
+}
+#ourTeam .cardContainer .card:hover .cardFooter .footerDetails {
+  margin-bottom: 0;
+  transition: 0.3s;
+}
+#ourTeam .cardContainer .card:hover .cardFooter .social {
+  bottom: 0;
+  transition: 0.3s;
+}
+#ourTeam .cardContainer .card:hover .cardFooter .social ul li {
+  bottom: 1rem;
+  transition: 0.1s;
+}
+#ourTeam .cardContainer .card:hover .cardFooter .social ul li:nth-child(1) {
+  transition-delay: 200ms;
+}
+#ourTeam .cardContainer .card:hover .cardFooter .social ul li:nth-child(2) {
+  transition-delay: 250ms;
+}
+#ourTeam .cardContainer .card:hover .cardFooter .social ul li:nth-child(3) {
+  transition-delay: 300ms;
+}
+#ourTeam .cardContainer .card:hover .cardFooter .social ul li:nth-child(4) {
+  transition-delay: 350ms;
+}
+#ourTeam .cardContainer .card:hover .cardFooter .social ul li:nth-child(5) {
+  transition-delay: 400ms;
+}
+#ourTeam .cardContainer .card:hover .cardFooter .social ul li:nth-child(6) {
+  transition-delay: 450ms;
+}
+#ourTeam .cardContainer .card:hover .cardFooter .social ul li:nth-child(7) {
+  transition-delay: 500ms;
+}
+#ourTeam .cardContainer .card .cardFooter {
+  color: white;
+  position: absolute;
+  width: 90%;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+}
+#ourTeam .cardContainer .card .cardFooter p {
+  transition: 0.2s;
+  margin-top: 2px;
+}
+#ourTeam .cardContainer .card .cardFooter h4 {
+  color: #fff;
+  transition: 0.2s;
+  font-size: 20px;
+}
+#ourTeam .cardContainer .card .cardFooter .footerDetails {
+  margin-bottom: -3.5rem;
+  transition: 0.3s;
+}
+#ourTeam .cardContainer .card .social {
+  position: relative;
+  bottom: -5rem;
+  overflow: hidden;
+  transition: 0.3s;
+}
+#ourTeam .cardContainer .card .social .ReadMoreStyle {
+  font-weight: 600;
+  font-size: 14px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#ourTeam .cardContainer .card .social .ReadMoreStyle:hover {
+  transition: 0.3s;
+  text-decoration: underline;
+}
+#ourTeam .cardContainer .card .social ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+#ourTeam .cardContainer .card .social ul li {
+  cursor: pointer;
+  position: relative;
+  bottom: -1rem;
+  transition: 0.1s;
+}
+#ourTeam .cardContainer .card .social ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.popDIalog_heading {
+  color: #fff;
+}
+
+.popDIalog_paragraph p {
+  color: black;
+}/*# sourceMappingURL=ourTeam.css.map */

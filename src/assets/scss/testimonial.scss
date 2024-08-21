@@ -1,0 +1,86 @@
+/*=======  Testimonial  =======*/
+.testimonial-box {
+  background-color: $white;
+  text-align: center;
+  padding: 50px 30px;
+  box-shadow: 0px 8px 8px #00000029;
+  border-radius: 20px;
+  height: 97%;
+  @include transition(0.3s);
+  margin-bottom: 40px;
+
+  @media #{$lg} {
+    padding: 50px 20px;
+  }
+
+  @media #{$lsm} {
+    padding: 50px 20px;
+    font-size: 14px;
+  }
+
+  .client-img {
+    max-width: 100px;
+    max-height: 100px;
+    margin: auto;
+    img {
+      max-width: 100px;
+      max-height: 100px;
+      border-radius: 50%;
+    }
+  }
+  .date {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: $primary-color;
+    @media #{$sm} {
+      font-size: 18px;
+    }
+  }
+  .clinet-post {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $black;
+    margin-bottom: 20px;
+    // letter-spacing: 2px;
+    font-size: 14px;
+  }
+  .comment {
+    font-size: 15px;
+  }
+  &:hover {
+    box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.2);
+  }
+}
+.testimonial-slider {
+  ul.slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    li {
+      display: inline-block;
+      cursor: pointer;
+      button {
+        font-size: 0;
+        border: 0;
+        background: #e7e7e7;
+        width: 16px;
+        height: 4px;
+        margin: 0 5px;
+        @include transition(0.3s);
+      }
+      &.slick-active {
+        button {
+          width: 26px;
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+}

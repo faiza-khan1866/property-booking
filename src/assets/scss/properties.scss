@@ -1,0 +1,533 @@
+/*=======  Room Gird  =======*/
+.feature-room-section {
+  background: $divider;
+  padding: 60px 0px;
+  margin: 60px 0px 0px;
+}
+
+.room-gird-loop {
+  .room-box {
+    figure {
+      overflow: hidden;
+      width: 100%;
+      height: 350px;
+      border-radius: 20px;
+      margin: 0;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        @include transition(0.3s);
+      }
+    }
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+    .room-desc {
+      font-size: 14px;
+      text-align: center;
+      padding: 30px;
+      position: relative;
+      @media #{$lg} {
+        padding: 25px;
+      }
+      @media #{$lsm} {
+        padding: 20px;
+      }
+      h4 {
+        font-size: 20px;
+        letter-spacing: 0px;
+        margin-bottom: 15px;
+        a {
+          color: $primary-color;
+        }
+
+        @media #{$sm} {
+          font-size: 22px;
+        }
+      }
+      a.book-btn {
+        color: #bdbdbd;
+        @media #{$lsm} {
+          margin-left: 10px;
+        }
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+/*=======  Properties List  =======*/
+.properties-list-loop {
+  .properties-box {
+    box-shadow: 0px 3px 6px #00000029;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    height: 100%;
+    figure {
+      overflow: hidden;
+      height: 320px;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      margin: 0;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        @include transition(0.4s);
+      }
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .properties-desc {
+      text-align: center;
+      background-color: $white;
+      font-size: 16px;
+      padding: 1.5rem 1rem;
+      position: relative;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      @media #{$sm} {
+        padding: 1rem 0.5rem;
+      }
+      .icons {
+        background-color: $white;
+        padding: 15px;
+        box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.04);
+        display: inline-block;
+        margin-bottom: 25px;
+        li {
+          display: inline-block;
+          margin: 0px 10px;
+          color: $black;
+
+          @media #{$lsm} {
+            margin: 0 8px;
+          }
+
+          @media #{$xsm} {
+            margin: 0 5px;
+          }
+        }
+      }
+
+      .mbldiv {
+        @media (max-width: 435px) {
+          display: block !important;
+        }
+      }
+      .title {
+        font-size: 20px;
+        letter-spacing: 0px;
+        margin-bottom: 1rem;
+        a {
+          color: $primary-color;
+        }
+        @media #{$sm} {
+          font-size: 22px;
+        }
+      }
+      .studio {
+        font-size: 16px;
+        color: $primary-color;
+        margin-bottom: 10px;
+      }
+      .sqfeet {
+        hr {
+          border-bottom: 1px solid $main-bg;
+          margin-top: 07px;
+          width: 30%;
+        }
+      }
+
+      .location {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        color: $black;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+      .price {
+        font-size: 30px;
+        font-weight: 600;
+        color: $primary-color;
+        line-height: 1;
+        display: block;
+        @media (max-width: 435px) {
+          margin-top: 10px;
+          margin-bottom: 20px;
+        }
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+    .main-btn.btn-border {
+      box-shadow: none;
+      font-size: 14px;
+      padding: 0.6rem 1.5rem;
+      border: 1.5px solid #2484c4;
+    }
+  }
+}
+
+// property inner
+.property_rooms_details_inner {
+  .property_rooms_meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    span i {
+      color: $primary-color;
+      margin-right: 10px;
+    }
+    @media (min-width: 1080px) {
+      width: 80%;
+    }
+  }
+}
+
+/*=======  Paginations  =======*/
+.pagination-wrap {
+  display: flex;
+  justify-content: flex-end;
+  @media #{$sm} {
+    justify-content: center;
+  }
+  align-items: center;
+  .paginationBttns {
+    width: auto;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .paginationBttns a {
+    padding: 7px 14px;
+    margin: 8px;
+    color: $black;
+    font-weight: 600;
+    font-family: $georgiaReg;
+    background: #f4f4f4;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .paginationActive a {
+    color: $primary-color;
+  }
+
+  .paginationDisabled a {
+    color: $main-bg;
+    background: #bdbdbd61;
+    cursor: not-allowed;
+  }
+}
+
+/*=======  Property Details  =======*/
+
+.property-details {
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 50px;
+  background: $white;
+  padding: 60px;
+  margin-top: -75px;
+  z-index: 2;
+  position: relative;
+  @media #{$md} {
+    padding: 40px;
+  }
+  @media #{$sm} {
+    padding: 30px 15px;
+  }
+
+  .deatils-box {
+    font-family: $georgiaReg;
+
+    .subheading {
+      color: $primary-color;
+      font-size: 24px;
+      margin-top: 30px;
+      @media #{$sm} {
+        font-size: 22px;
+      }
+    }
+
+    .price {
+      font-size: 18px;
+      color: $main_bg;
+      font-weight: 600;
+      font-family: $georgiaReg;
+      @media #{$xsm} {
+        font-size: 22px;
+        margin-top: 15px;
+      }
+      span {
+        font-size: 16px;
+      }
+    }
+
+    .subtitle {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+
+    .socila-icons-area {
+      padding-top: 50px;
+      padding-left: 150px;
+      @media #{$lg} {
+        padding-top: 40px;
+        padding-left: 100px;
+      }
+
+      @media #{$xsm} {
+        padding-top: 30px;
+        padding-left: 0px;
+      }
+      @media #{$sm, $md} {
+        padding-top: 30px;
+        padding-left: 0px;
+      }
+      @media #{$sm} {
+        text-align: center;
+      }
+
+      a {
+        padding-right: 30px;
+        &:last-child {
+          padding-right: 0px;
+        }
+        i {
+          color: $main-bg;
+          font-size: 25px;
+        }
+        &:hover {
+          i {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+
+    .amenities-area {
+      padding: 50px 0px;
+
+      @media #{$lg} {
+        padding: 40px 0px;
+      }
+
+      @media #{$xsm} {
+        padding: 30px 0px;
+      }
+
+      .amenities-list {
+        li {
+          width: 33.33%;
+          float: left;
+          margin-bottom: 20px;
+          // padding-left: 40px;
+          position: relative;
+          @media #{$lsm} {
+            width: 50%;
+          }
+          @media #{$xsm} {
+            width: 100%;
+          }
+          i {
+            color: $primary-color;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+
+    hr {
+      border: 1px solid #f1f1f1;
+      margin: 0;
+    }
+
+    .rooms_unavailable_note {
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      span {
+        color: $primary-color;
+      }
+    }
+
+    .property-type-area {
+      padding-top: 50px;
+      .roomsDiv {
+        border: 1px solid $borderColor;
+        padding: 1.5rem;
+        input {
+          width: 20px;
+          height: 20px;
+          margin-bottom: 1rem;
+        }
+      }
+
+      .price {
+        font-size: 24px;
+        color: $main-bg;
+      }
+
+      @media #{$lg} {
+        padding-top: 40px;
+      }
+
+      @media #{$xsm} {
+        padding-top: 30px;
+      }
+      .title {
+        font-size: 24px;
+        letter-spacing: 0px;
+        margin-bottom: 15px;
+        color: $primary-color;
+        @media #{$sm} {
+          font-size: 22px;
+        }
+        // a {
+        //   color: $primary-color;
+        // }
+      }
+      .studio {
+        font-size: 16px;
+        color: $primary-color;
+        margin-bottom: 10px;
+      }
+      .sqfeet {
+        hr {
+          border-bottom: 1px solid $main-bg;
+          margin-top: 07px;
+          width: 30%;
+        }
+      }
+
+      .location {
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        color: $black;
+      }
+
+      .main-btn.btn-filled {
+        @media #{$sm} {
+          width: 100%;
+        }
+      }
+      .wish-btn {
+        display: inline-block;
+        background: $white;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0.7rem 1.5rem;
+        font-size: 16px;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 15px;
+        cursor: pointer;
+        -webkit-transition: all 0.4s ease-out 0s;
+        transition: all 0.4s ease-out 0s;
+        text-transform: capitalize;
+        border: 2px solid $white;
+        color: $black;
+        &:hover {
+          border: 2px solid $primary-color;
+        }
+        @media #{$sm} {
+          width: 100%;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+
+/*=======  Property Map Section  =======*/
+
+.location-map {
+  padding-top: 50px;
+  .google-map {
+    width: 100%;
+    height: 60vh;
+    @media screen and (min-width: 799px) {
+      height: 80vh;
+    }
+    .pin {
+      display: flex;
+      align-items: center;
+      width: 180px;
+      @media screen and (min-width: 799px) {
+        width: 15vw;
+      }
+      .pin-icon {
+        font-size: 3vw;
+        color: red;
+        margin-right: 1rem;
+      }
+      .pin-text {
+        font-size: 16px;
+        font-weight: 600;
+        color: $white;
+      }
+    }
+  }
+}
+
+// share icons
+
+.shareBtnWrape {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 150px;
+  @media #{$lg} {
+    padding-top: 40px;
+    padding-left: 100px;
+  }
+
+  @media #{$xsm} {
+    padding-top: 30px;
+    padding-left: 0px;
+  }
+  @media #{$sm, $md} {
+    padding-top: 30px;
+    padding-left: 0px;
+  }
+  @media #{$sm} {
+    text-align: center;
+  }
+  @media (max-width: 991px) {
+    margin-bottom: 3rem;
+  }
+  .shareBtn {
+    margin-right: 1rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

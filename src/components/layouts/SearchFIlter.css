@@ -1,0 +1,29 @@
+.react-datepicker-popper {
+  z-index: 100 !important;
+}
+/* DateTimePicker.css */
+ .react-datepicker__time-container ,.react-datepicker__month-container{
+  width: 100% ; /* Set the time section to full width */
+}
+
+.react-datepicker__navigation--next--with-time:not(.react-datepicker__navigation--next--with-today-button){
+  right: 0;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box {
+  width: 100%; /* Adjust width of time select dropdowns */
+}
+
+@media (max-width: 991px) {
+  .react-datepicker__tab-loop
+    .react-datepicker-popper
+    .react-datepicker
+    .react-datepicker__navigation.react-datepicker__navigation--previous,
+  .react-datepicker__tab-loop
+    .react-datepicker-popper
+    .react-datepicker
+    .react-datepicker__navigation.react-datepicker__navigation--next {
+    position: absolute;
+    top: -1.3rem;
+  }
+}

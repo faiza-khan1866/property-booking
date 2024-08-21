@@ -1,0 +1,13 @@
+.cleint-section {
+  .clientdes {
+    text-align: justify;
+    font-size: $pfont;
+    @media #{$sm} {
+      font-size: $pmblfont;
+    }
+  }
+}
+
+// Our team css
+.team-section {
+}

@@ -1,0 +1,63 @@
+.faq-section {
+  .accordion {
+    border: none;
+    border-radius: 0;
+  }
+  .accordion__item {
+    border-top: none !important;
+    box-shadow: 0px 3px 6px #00000020;
+    margin-bottom: 1.5rem;
+    background-color: $white;
+    overflow: hidden;
+  }
+  .accordion__panel {
+    font-size: $pfont;
+    padding-top: 0;
+    color: $main-bg;
+    hr {
+      margin-top: 0;
+      border-color: #cecccc;
+    }
+    p {
+      font-size: $pfont;
+      @media #{$sm} {
+        font-size: $pmblfont;
+      }
+    }
+  }
+  .accordion__button {
+    background-color: $white;
+    color: $black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: inherit;
+    border: none;
+    font-size: $pfont;
+    @media #{$sm} {
+      font-size: $pmblfont;
+    }
+
+    &:hover {
+      background-color: $white;
+    }
+  }
+
+  .accordion__button:before {
+    content: "\f067";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 300;
+    float: right;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(0deg);
+    transition: all 0.3s linear;
+    color: $primary-color;
+  }
+
+  .accordion__button[aria-expanded="true"]::before,
+  .accordion__button[aria-selected="true"]::before {
+    content: "\f068";
+    transform: rotate(0deg);
+  }
+}

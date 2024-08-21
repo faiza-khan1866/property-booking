@@ -1,0 +1,212 @@
+/*=======  View Cart CSS  =======*/
+.cart_area {
+  .book_room {
+    border: 1px solid $borderColor;
+    box-shadow: 0px 8px 8px #00000015;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .title_icon {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      h2 {
+        font-size: 18px;
+      }
+      .remove_icon {
+        color: rgb(233, 13, 13);
+        cursor: pointer;
+      }
+    }
+
+    .room_price {
+      margin-bottom: 1rem;
+      font-size: 18px;
+      font-weight: 500;
+      color: $primary-color;
+    }
+
+    .amenities-list {
+      margin-bottom: 0.5rem;
+      li {
+        width: 33.3%;
+        float: left;
+        margin-bottom: 0.5rem;
+        // padding-left: 1.5rem;
+        position: relative;
+        font-size: 14px;
+        @media #{$lsm} {
+          width: 50%;
+        }
+        @media #{$xsm} {
+          width: 50%;
+        }
+        i {
+          color: $primary-color;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+    .guest_info {
+      margin-bottom: 0.5rem;
+    }
+
+    input {
+      border: 1px solid $borderColor;
+      border-right: 0;
+      background: $light-gray;
+      border-radius: 0;
+      color: $black;
+      font-size: 15px;
+      font-weight: 400;
+      &::placeholder {
+        color: rgba(91, 108, 143, 0.5);
+      }
+      &:focus {
+        box-shadow: none;
+        border: 1px solid $primary-color;
+      }
+    }
+
+    input {
+      height: auto;
+      padding: calc(0.55rem + 2px) calc(0.75rem + 2px);
+    }
+
+    .input-group-text {
+      border: 1px solid $borderColor;
+      border-left: 0;
+      border-radius: 0;
+      color: $primary-color;
+      background: $light-gray;
+    }
+
+    // input {
+    //   -webkit-box-shadow: 0px 3px 6px #00000020;
+    //   box-shadow: 0px 3px 6px #00000020;
+    //   background: $white;
+    //   height: 50px;
+    //   padding-left: 45px;
+    //   font-size: 14px;
+    // }
+    // .icon {
+    //   left: 20px;
+    //   bottom: 24px;
+    // }
+
+    .category_part {
+      margin-top: 1.5rem;
+      figure {
+        height: 130px;
+        margin: 0;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .title {
+        font-size: 18px;
+        margin-bottom: 0.5rem;
+      }
+      .cat_class {
+        font-size: 14px;
+        color: $main_bg;
+        margin-bottom: 0.5rem;
+        @media #{$sm} {
+          margin-top: 1rem;
+        }
+      }
+      .price {
+        color: $main_bg;
+        margin-bottom: 0.3rem;
+        font-size: 14px;
+      }
+      .amin_class {
+        font-size: 14px;
+        i {
+          color: $primary-color;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .cart_submit {
+    text-align: right;
+    margin-top: 1.5rem;
+    .main-btn.btn-border {
+      box-shadow: none;
+      border-radius: 0;
+      background: $white;
+      color: $primary-color;
+      font-size: 16px;
+      letter-spacing: 0px;
+      &:hover {
+        background: $primary-color;
+        color: $white;
+      }
+    }
+  }
+}
+
+/*=======  Cart Total CSS  =======*/
+.cart_total_area {
+  border: 1px solid $borderColor;
+  padding: 30px 25px;
+  box-shadow: 0px 8px 8px #00000015;
+  h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    span {
+      color: $primary-color;
+    }
+  }
+  .cart_total_inner {
+    .cart_subtotal {
+      display: flex;
+      justify-content: space-between;
+      p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        font-weight: 500;
+        .far {
+          color: $primary-color;
+        }
+      }
+    }
+    .main-btn.btn-filled {
+      box-shadow: none;
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 0;
+    }
+  }
+}
+
+/*=======  Empty Cart CSS  =======*/
+.empaty_cart_area {
+  text-align: center;
+  i {
+    font-size: 10rem;
+    color: $primary-color;
+    margin-bottom: 25px;
+  }
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .main-btn.btn-filled {
+    box-shadow: none;
+  }
+}

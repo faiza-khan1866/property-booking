@@ -1,0 +1,90 @@
+/*-----------------------------------------------------------------------------------
+    Template Name: Hotel Miranda Hoetel Resort Booking React Template
+    Template URI: http://androthemes.com/themes/react/miranda/
+    Author: WebTend
+    Author URI: https://themeforest.net/user/androthemes
+    Version: 1.0
+
+    Note: This is Main Style Scss File. 
+-----------------------------------------------------------------------------------
+    CSS INDEX
+    ===================
+    Common
+    Header
+    -- Off canvas menu
+    -- Breadcrumb CSS
+    Banner
+    About
+    Room Tab
+    Call TO Action
+    Text Block
+    Testimonial
+    Latest Post 
+    Core Feature
+    -- Dark Style
+    Room
+    -- Room Gird
+    -- Room List
+    -- Room Slider
+      -- Room Slider One
+      -- Room Slider Two
+    -- Room Details
+    Counter
+    Our Menu
+    Contact
+    -- Contact info box
+    Offers
+    Gallery
+    News
+    -- News Details
+    -- Paginations
+    -- Sidebars
+    Booking Form
+    Locations
+    -- Locations Details
+    Restaurant
+    Footer
+    -- Subscibe
+    -- Widgets
+    -- Copy Right
+    -- Back to top
+    
+-----------------------------------------------------------------------------------*/
+// @import "react-toastify/dist/ReactToastify.min.css";
+
+// @import "./../fonts/"
+@import "./variables.scss";
+@import "./mixin.scss";
+@import "./common.scss";
+@import "./header.scss";
+@import "./about.scss";
+@import "./text-block.scss";
+@import "./testimonial.scss";
+@import "./feature.scss";
+@import "./properties.scss";
+@import "./contact.scss";
+@import "./services.scss";
+@import "./search_filter.scss";
+@import "./locations.scss";
+@import "./investment_advisory.scss";
+@import "./loader.scss";
+@import "./ourTeam.scss";
+@import "./holiday_homes.scss";
+@import "./footer.scss";
+@import "./mainbanner.scss";
+@import "./blogs.scss";
+@import "./partners.scss";
+@import "./welcomeblock.scss";
+@import "./topheader.scss";
+@import "./client.scss";
+@import "./location_search.scss";
+@import "./faq.scss";
+@import "./interior_designing.scss";
+@import "./list_property.scss";
+@import "./cart.scss";
+@import "./checkout.scss";
+@import "./wishlist.scss";
+@import "./account.scss";
+@import "./property_availability_search.scss";
+@import "./rooms.scss";
+@import "./error.scss";

@@ -1,0 +1,86 @@
+/*======= Support Service CSS  =======*/
+.interior-service-area {
+  background: $main-bg;
+}
+
+/*======= Geta Quote CSS  =======*/
+.quote-form {
+  textarea {
+    resize: none;
+  }
+  label {
+    font-size: 15px;
+    font-weight: 400;
+    color: $black;
+  }
+  input,
+  textarea {
+    border: 1px solid $borderColor;
+    border-right: 0;
+    background: $light-gray;
+    border-radius: 0;
+    color: $black;
+    font-size: 15px;
+    font-weight: 400;
+    &::placeholder {
+      color: rgba(91, 108, 143, 0.5);
+    }
+    &:focus {
+      box-shadow: none;
+      border: 1px solid $primary-color;
+    }
+  }
+
+  input,
+  textarea {
+    height: auto;
+    padding: calc(0.55rem + 2px) calc(0.75rem + 2px);
+  }
+
+  .input-group-text {
+    border: 1px solid $borderColor;
+    border-left: 0;
+    border-radius: 0;
+    color: $primary-color;
+    background: $light-gray;
+  }
+
+  .btn_submit {
+    border-radius: 15px;
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: $white;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    @include transition(0.4s);
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+    &:hover {
+      color: $primary-color;
+      background: $white;
+    }
+  }
+
+  .fileuploadtext {
+    color: $main-bg;
+  }
+  .main-btn.btn-border {
+    box-shadow: none;
+    border-radius: 0;
+    background: $white;
+    width: 100%;
+    color: $primary-color;
+    font-size: 18px;
+    letter-spacing: 0px;
+    &:hover {
+      background: $primary-color;
+      color: $white;
+    }
+  }
+}

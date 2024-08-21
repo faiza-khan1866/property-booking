@@ -1,0 +1,273 @@
+/*=======  About Holiday Homes CSS  =======*/
+
+.about-holiday {
+  p {
+    font-size: $pfont;
+    text-align: center;
+  }
+}
+
+/*=======  Property CSS  =======*/
+
+.property-area {
+  .property-gird-loop {
+    .property-box {
+      .property-img-wrap {
+        overflow: hidden;
+        width: 100%;
+        height: 240px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        .property-img {
+          height: 100%;
+          width: 100%;
+          @include transition(0.3s);
+          background-size: cover;
+          background-position: center;
+        }
+      }
+      &:hover {
+        .property-img {
+          transform: scale(1.1);
+        }
+      }
+      .property-desc {
+        overflow: hidden;
+        background: $white;
+        box-shadow: 0px 3px 6px #00000029;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        font-size: 14px;
+        text-align: left;
+        padding: 15px 30px 30px 30px;
+        position: relative;
+        @media #{$lg} {
+          padding: 15px 25px 25px 25px;
+        }
+        @media #{$lsm} {
+          padding: 10px 20px 20px 20px;
+        }
+
+        h4 {
+          font-size: 20px;
+          letter-spacing: 0px;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          color: $primary-color;
+          @media #{$sm} {
+            font-size: 18px;
+          }
+        }
+        .location {
+          color: $main-bg;
+          margin-bottom: 25px;
+        }
+        .posted {
+          color: $main-bg;
+        }
+        a.read-btn {
+          color: $main-bg;
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*======= List Your Property CSS  =======*/
+.proprty-form {
+  textarea {
+    resize: none;
+  }
+  label {
+    font-size: 15px;
+    font-weight: 400;
+    color: $black;
+  }
+  input,
+  textarea {
+    border: 1px solid $borderColor;
+    border-right: 0;
+    background: $light-gray;
+    border-radius: 0;
+    color: $black;
+    font-size: 15px;
+    font-weight: 400;
+    &::placeholder {
+      color: rgba(91, 108, 143, 0.5);
+    }
+    &:focus {
+      box-shadow: none;
+      border: 1px solid $primary-color;
+    }
+  }
+
+  input,
+  textarea {
+    height: auto;
+    padding: calc(0.55rem + 2px) calc(0.75rem + 2px);
+  }
+
+  .input-group-text {
+    border: 1px solid $borderColor;
+    border-left: 0;
+    border-radius: 0;
+    color: $primary-color;
+    background: $light-gray;
+  }
+
+  .btn_submit {
+    border-radius: 15px;
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: $white;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+    @include transition(0.4s);
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+    &:hover {
+      color: $primary-color;
+      background: $white;
+    }
+  }
+  h3 {
+    color: $main-bg;
+    margin-bottom: 2rem;
+    font-size: 24px;
+    @media #{$lsm} {
+      font-size: 22px;
+    }
+  }
+  .fileuploadtext {
+    color: $main-bg;
+  }
+  .main-btn.btn-filled {
+    box-shadow: none;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 18px;
+    letter-spacing: 0px;
+  }
+  .main-btn.btn-border {
+    box-shadow: none;
+    border-radius: 0;
+    background: $white;
+    width: 100%;
+    color: $primary-color;
+    font-size: 18px;
+    letter-spacing: 0px;
+    &:hover {
+      background: $primary-color;
+      color: $white;
+    }
+  }
+}
+
+/*=======  Pricing Plan CSS  =======*/
+
+.pricing-plan-area {
+  margin-bottom: 2rem;
+  .pricing-box {
+    text-align: center;
+    border: 1px solid $main-bg;
+    background: $white;
+    padding: 30px;
+    position: relative;
+    height: 100%;
+    @include transition(0.3s);
+
+    @media #{$sm} {
+      padding: 20px;
+    }
+
+    &:hover {
+      z-index: 1;
+      transform: scale(1.05);
+      background: linear-gradient(180deg, #0070bb 0%, #63d8dc 100%);
+      border: none;
+      color: $white;
+      .pricing-desc h4 {
+        color: $white;
+      }
+      .hoverimg {
+        display: block !important;
+      }
+      .mainimg {
+        display: none;
+      }
+      ul {
+        li {
+          &:before {
+            color: $white !important;
+          }
+        }
+      }
+    }
+
+    .pricing-desc {
+      font-size: 16px;
+      .mainimg {
+        margin-bottom: 0.5rem;
+      }
+      .hoverimg {
+        margin-bottom: 0.5rem;
+        display: none;
+      }
+
+      p {
+        @media #{$sm} {
+          text-align: center;
+        }
+      }
+
+      h4 {
+        font-size: 20px;
+        letter-spacing: 0px;
+        margin-bottom: 0.5rem;
+        color: $primary-color;
+        @media #{$sm} {
+          font-size: 18px;
+        }
+      }
+      .price {
+        font-size: 18px;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+      ul {
+        margin-bottom: 25px;
+        li {
+          margin-bottom: 0.3rem;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          &:before {
+            content: "✓";
+            margin-right: 0.5rem;
+            color: $primary-color;
+          }
+        }
+      }
+      .main-btn.btn-border {
+        box-shadow: 0px 3px 6px #00000029;
+        background: $white;
+        letter-spacing: 0px;
+        color: #000000;
+        font-size: 16px;
+        padding: 0.5rem 1rem;
+        &:hover {
+          background: $primary-color;
+          color: $white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+:focus {
+  outline: none;
+}
+.preloader {
+  display: flex;
+}
+header
+  .nav-container.breakpoint-on
+  .nav-menu
+  .menu-items
+  ul
+  li.menu-item-has-children
+  > a::after {
+  content: "\f107";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 300;
+  display: block;
+  position: absolute;
+  right: 0;
+  height: 45px;
+  width: 45px;
+  top: 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  z-index: 2;
+  background: transparent;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+}
+
+.input-group.input-group-two .nice-select,
+.booking-form form .inputs-filed .nice-select {
+  padding: 0;
+  border: none;
+}
+.input-group.input-group-two .nice-select::before {
+  left: auto;
+  right: 30px;
+}
+.input-group.input-group-two .nice-select select {
+  margin-left: 0;
+  padding: 0 50px 0 30px;
+  -webkit-appearance: none;
+  font-size: 14px;
+}
+.nice-select::before {
+  content: "\f063";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 300;
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  color: #0070bb;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.react-datepicker__tab-loop
+  .react-datepicker-popper
+  .react-datepicker
+  .react-datepicker__navigation {
+  background: transparent;
+  width: 10px;
+  height: 10px;
+  letter-spacing: normal;
+  border: 0.45rem solid transparent;
+}
+.react-datepicker__tab-loop
+  .react-datepicker-popper
+  .react-datepicker
+  .react-datepicker__navigation.react-datepicker__navigation--next {
+  border-left-color: #ccc !important;
+}
+.react-datepicker__tab-loop
+  .react-datepicker-popper
+  .react-datepicker
+  .react-datepicker__navigation.react-datepicker__navigation--previous {
+  border-right-color: #ccc !important;
+}
+
+.sidebar .widget.popular-feeds .single-popular-feed .feed-img {
+  width: 80px;
+  height: 80px;
+}
+.sidebar .widget.popular-feeds .single-popular-feed .feed-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}

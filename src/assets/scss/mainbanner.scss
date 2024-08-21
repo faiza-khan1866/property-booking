@@ -1,0 +1,191 @@
+/*=======  BANNER CSS  =======*/
+.home-banner-area {
+  position: relative;
+  width: 100%;
+  height: 650px; /* Set the height you desire for the banner */
+  // overflow: hidden;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  // @media #{$md} {
+  //   height: 550px;
+  // }
+  @media #{$sm} {
+    height: 450px;
+  }
+  @media #{$md} {
+    height: 800px;
+  }
+  .banner_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the whole banner area */
+  }
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    -webkit-transform: translate(-50%, -50%) !important;
+    text-align: center;
+    width: max-content;
+    color: $white;
+    z-index: 2;
+    @media #{$sm, $md} {
+      width: 100%;
+    }
+    span.promo-tag {
+      font-size: 20px;
+      font-style: italic;
+      font-weight: 400;
+      letter-spacing: 0px;
+      padding-bottom: 30px;
+      // color: $black;
+      color: $white;
+      @media #{$md} {
+        font-size: 25px;
+      }
+      @media #{$sm} {
+        font-size: 25px;
+      }
+    }
+    .title {
+      font-size: 45px;
+      line-height: 1.1;
+      font-weight: 600;
+      letter-spacing: 0px;
+      padding-bottom: 26px;
+      // color: $black !important;
+      color: $white;
+      @media #{$xl} {
+        font-size: 45px;
+      }
+      @media #{$lg} {
+        font-size: 45px;
+      }
+      @media #{$lsm} {
+        font-size: 45px;
+      }
+      @media #{$xsm} {
+        font-size: 45px;
+      }
+      @media #{$tiny} {
+        font-size: 35px;
+      }
+    }
+  }
+
+  .banner-thumb {
+    .single-thumb {
+      overflow: hidden;
+      img {
+        animation: zoomIn 15s linear infinite;
+      }
+    }
+  }
+
+  &.banner-style-two {
+    .single-banner {
+      height: 650px;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      @media #{$sm} {
+        height: 450px;
+      }
+      @media #{$md} {
+        height: 800px;
+      }
+      .banner-bg,
+      .banner-overly {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        background-size: cover;
+        background-position: center;
+      }
+      .banner-overly {
+        // background: $black;
+        // z-index: -1;
+        // opacity: 0.3;
+      }
+      .banner-bg {
+        animation: zoomIn 15s linear infinite;
+      }
+    }
+    .banner-content {
+      &,
+      h1 {
+        color: $white;
+      }
+      h1 {
+        @media #{$md} {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 50px;
+    background: $white;
+    line-height: 50px;
+    text-align: center;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 9;
+    &:hover {
+      background-color: $primary-color;
+      color: $white;
+    }
+    &.next-arrow {
+      right: 0;
+      left: auto;
+    }
+  }
+
+  ul.slick-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-51%);
+    bottom: 30px;
+    li {
+      display: inline-block;
+      margin: 0 5px;
+      button {
+        border: none;
+        font-size: 0;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        line-height: 0;
+        font-size: 0;
+      }
+      &.slick-active {
+        button {
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+}

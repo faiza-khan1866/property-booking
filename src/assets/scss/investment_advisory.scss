@@ -1,0 +1,209 @@
+/*=======  About Service CSS  =======*/
+
+.about-service {
+  .about-text {
+    .title {
+      font-size: 28px;
+      letter-spacing: 0px;
+      span {
+        color: $primary-color;
+      }
+
+      @media #{$sm} {
+        font-size: 25px;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+      @media #{$xsm} {
+        font-size: 25px;
+        text-align: center;
+      }
+    }
+    p {
+      font-size: $pfont;
+      @media #{$sm} {
+        font-size: $pmblfont;
+      }
+      ul {
+        margin-top: 1rem;
+        @media #{$sm} {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+/*=======  Benefits CSS  =======*/
+.benefits-area {
+  .nav-link {
+    @include transition(0.3s);
+    background: $white;
+    text-align: center;
+    display: block;
+    padding: 25px;
+    border-radius: 20px;
+    @media #{$xsm} {
+      padding: 20px;
+    }
+    @media #{$sm} {
+      margin-bottom: 1rem;
+    }
+    .title {
+      display: block;
+      font-size: 16px;
+      font-weight: 600;
+      padding-top: 20px;
+      text-transform: capitalize;
+      line-height: normal;
+      @include transition(0.3s);
+      color: $black;
+      @media #{$sm} {
+        font-size: 15px;
+      }
+    }
+    &:hover {
+      box-shadow: 0px 3px 6px #00000029;
+    }
+  }
+}
+
+/*=======  Plans CSS  =======*/
+
+.plans-area {
+  .card {
+    border: none;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 50px !important;
+  }
+  .card-body {
+    font-size: $pfont;
+    padding: 0.7rem 1.5rem;
+    @media #{$sm} {
+      font-size: $pmblfont;
+    }
+  }
+}
+
+/*=======  Support Service CSS  =======*/
+
+.support-area {
+  .nav-link {
+    @include transition(0.3s);
+    text-align: center;
+    display: block;
+    padding: 25px;
+    @media #{$xsm} {
+      padding: 20px;
+    }
+    .title {
+      display: block;
+      font-size: 16px;
+      font-weight: 600;
+      padding-top: 20px;
+      text-transform: capitalize;
+      line-height: normal;
+      @include transition(0.3s);
+      color: $black;
+      @media #{$sm} {
+        font-size: 15px;
+      }
+    }
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+/*=======  Project Highlights CSS  =======*/
+.project-grid-loop {
+  .project-box {
+    position: relative;
+    figure {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 450px;
+      margin: 0;
+      border-radius: 20px;
+      @include transition(0.3s);
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+        // background: $black;
+        // opacity: 0.3;
+        // z-index: 1;
+        opacity: 0.86;
+        background-image: -webkit-linear-gradient(
+          270deg,
+          rgba(0, 0, 0, 0) 12%,
+          #000 97%
+        );
+        background-image: linear-gradient(
+          -180deg,
+          rgba(0, 0, 0, 0) 12%,
+          #000 97%
+        );
+        height: 200px;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    &:hover {
+      figure {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+    .project-desc {
+      font-size: 14px;
+      text-align: left;
+      padding: 30px;
+      position: absolute;
+      // z-index: 2;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      @media #{$lg} {
+        padding: 25px;
+      }
+      @media #{$lsm} {
+        padding: 20px;
+      }
+      .title {
+        font-size: 20px;
+        letter-spacing: 0px;
+        color: $white;
+        margin-bottom: 10px;
+        @media #{$lsm} {
+          font-size: 18px;
+        }
+      }
+      .subtitle {
+        color: $white;
+        margin-bottom: 25px;
+      }
+      .know-more-btn {
+        color: $white;
+        font-size: 16px;
+        border-bottom: 1px solid $white;
+        &:hover {
+          color: $primary-color;
+          border-bottom: 1px solid $primary-color;
+        }
+      }
+    }
+  }
+}

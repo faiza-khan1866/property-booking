@@ -1,0 +1,36 @@
+.welcome-section {
+  background: $gradient_bg;
+
+  .section-title h2 {
+    color: $white;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  .main-btn {
+    color: $white;
+    border: none;
+    padding: 0;
+    font-size: 20px;
+    i {
+      // visibility: hidden;
+      font-size: 25px;
+    }
+    &:hover {
+      i {
+        visibility: visible;
+        transition: all 2s;
+      }
+    }
+  }
+
+  .tap_toLearn {
+    @media #{$tiny} {
+      font-size: 16px;
+      i {
+        font-size: 18px;
+      }
+    }
+  }
+}

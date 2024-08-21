@@ -1,0 +1,221 @@
+/*=======  Checkout form CSS  =======*/
+.swal2-popup {
+  padding: 0 !important;
+}
+.swal2-close {
+  font-size: 2em !important;
+  &:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+  }
+}
+.checkout-form {
+  .booking-for {
+    height: auto;
+    background: transparent;
+    width: auto;
+    box-shadow: none;
+  }
+  .selectcustomarrowstyle {
+    /* Arrow */
+    appearance: none;
+    background-image: url("../arrowiconcolor.png");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 1rem auto;
+  }
+
+  textarea {
+    resize: none;
+  }
+  input,
+  textarea,
+  select {
+    border: 1px solid $borderColor;
+    border-right: 0;
+    background: transparent;
+    border-radius: 0;
+    color: $black;
+    font-size: 15px;
+    font-weight: 400;
+    &::placeholder {
+      color: rgba(91, 108, 143, 0.5);
+    }
+    &:focus {
+      box-shadow: none;
+      border: 1px solid $primary-color;
+    }
+  }
+
+  input,
+  textarea,
+  select {
+    height: auto;
+    padding: calc(0.55rem + 2px) calc(0.75rem + 2px);
+  }
+
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid $borderColor;
+    background: $light-gray;
+    // background: transparent;
+    // -webkit-box-shadow: 0px 3px 6px #00000020;
+    // box-shadow: 0px 3px 6px #00000020;
+  }
+
+  .input-icon {
+    margin: 0 0.5rem;
+    color: $primary-color;
+  }
+  ///////
+  .main-btn.btn-filled {
+    box-shadow: none;
+  }
+}
+
+/*=======  Order Summary CSS  =======*/
+.order_summary_area {
+  border: 1px solid $borderColor;
+  padding: 30px 25px;
+  box-shadow: 0px 8px 8px #00000015;
+  h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    span {
+      color: $primary-color;
+    }
+  }
+  .cart_subtotal {
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+  }
+  .category_div {
+    .cat_title {
+      font-size: 14px;
+      line-height: normal;
+      margin-bottom: 0.5rem;
+    }
+    .price {
+      font-size: 12px;
+      color: $main_bg;
+    }
+    .room_div {
+      p {
+        font-size: 14px;
+        line-height: normal;
+        &:first-child {
+          font-weight: 600;
+          margin: 0.5rem 0;
+        }
+      }
+    }
+  }
+
+  .heading_payment {
+    label {
+      font-size: 16px;
+      font-weight: 500;
+      margin-left: 10px;
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+    }
+    input {
+      width: auto;
+      height: 12px;
+    }
+  }
+  .main-btn.btn-filled {
+    box-shadow: none;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 0;
+  }
+  .table-responsive {
+    position: relative;
+    z-index: 1;
+    table thead {
+      background: $primary-color;
+      text-align: center;
+    }
+  }
+  .order_table {
+    table thead tr th {
+      min-width: 50%;
+      text-align: center;
+      padding: 15px 0;
+      border-bottom: 1px solid $borderColor;
+      border-right: 1px solid $primary-color;
+      font-weight: 500;
+      color: $white;
+    }
+
+    table tbody tr td {
+      min-width: 50%;
+      text-align: left;
+      padding: 15px;
+      border-bottom: 1px solid $borderColor;
+      border-left: 1px solid $borderColor;
+      border-right: 1px solid $borderColor;
+    }
+
+    table tfoot tr th {
+      min-width: 50%;
+      text-align: left;
+      padding: 15px 5px;
+      border-bottom: 1px solid $borderColor;
+      .far {
+        color: $primary-color;
+      }
+    }
+
+    table tfoot tr td {
+      min-width: 50%;
+      text-align: left;
+      padding: 15px 5px;
+      border-bottom: 1px solid $borderColor;
+    }
+  }
+
+  /*=======  Payment Method CSS  =======*/
+  .payment_area {
+    margin-top: 10px;
+    .payment_method {
+      .card {
+        border: 0;
+        .card-header {
+          background: transparent;
+          padding: 0.5rem;
+          border-bottom: 1px solid $borderColor;
+          .heading_payment {
+            label {
+              font-size: 16px;
+              font-weight: 500;
+              margin-left: 10px;
+              margin-bottom: 0;
+              cursor: pointer;
+            }
+            input {
+              width: auto;
+              height: 12px;
+            }
+          }
+        }
+        .card-body {
+          padding: 0.5rem 1.4rem;
+          border-bottom: 1px solid $borderColor;
+          .payment_body {
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

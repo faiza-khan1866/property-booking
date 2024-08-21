@@ -1,0 +1,526 @@
+/*=======  Dashboard CSS  =======*/
+.my_account_area {
+  .main-btn.btn-filled {
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .main-btn.btn-border {
+    box-shadow: none;
+    border-radius: 0;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    &:hover {
+      color: $white;
+    }
+  }
+  .myaccount-content {
+    border: 1px solid $borderColor;
+    padding: 30px;
+    .title {
+      font-size: 24px;
+      color: $black;
+      border-bottom: 1px solid $borderColor;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+      font-weight: 500;
+      span {
+        text-transform: capitalize;
+        color: $primary-color;
+      }
+    }
+    p {
+      @media #{$sm,$md} {
+        text-align: left;
+      }
+    }
+    table {
+      overflow: hidden;
+      width: 100%;
+      border: 1px solid $borderColor;
+    }
+    .table-responsive {
+      position: relative;
+      z-index: 1;
+      table thead {
+        background: $primary-color;
+      }
+    }
+    .table_page {
+      table thead tr th {
+        color: #fff;
+        border-right: 0;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: capitalize;
+        padding: 10px;
+        text-align: center;
+      }
+      table tbody tr {
+        td {
+          border-bottom: 1px solid $borderColor;
+          text-align: center;
+          font-weight: 500;
+          padding: 10px;
+          text-transform: capitalize;
+          // min-width: 119px;
+          min-width: fit-content;
+          font-size: 14px;
+        }
+        .arrival_time {
+          min-width: 160px;
+        }
+        .checkout_Date {
+          min-width: 132px;
+        }
+        .payment_status {
+          min-width: 130px;
+        }
+        i {
+          font-size: 18px;
+        }
+      }
+    }
+    .table_page table thead tr:last-child th,
+    .table_desc table tbody tr td:last-child {
+      border-right: 0;
+    }
+    /* pagination.css */
+
+    .pagination {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 1.5rem;
+      gap: 15px;
+      @media #{$sm} {
+        margin-bottom: 1.5rem;
+      }
+      button,
+      select {
+        padding: 5px 10px;
+        border: 1px solid $borderColor;
+        border-radius: 4px;
+        background-color: $light-gray;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      button:disabled {
+        background-color: #e9ecef;
+        cursor: not-allowed;
+      }
+      button:hover:not(:disabled) {
+        background-color: #e2e6ea;
+      }
+      span {
+        font-size: 14px;
+        color: $text-color;
+        font-weight: 500;
+      }
+      select {
+        padding: 5px;
+        border-radius: 4px;
+        width: fit-content;
+        height: fit-content;
+      }
+    }
+  }
+
+  /*=======  Sidebar CSS  =======*/
+
+  .dashboard_tab_button {
+    margin-bottom: 50px;
+    li {
+      a {
+        border: 1px solid $borderColor;
+        border-bottom: none;
+        color: $black;
+        font-weight: 500;
+        font-size: 15px;
+        display: block;
+        padding: 18px 15px;
+        text-transform: uppercase;
+        &:hover,
+        &.active {
+          background-color: $primary-color;
+          border-color: $primary-color;
+          color: #fff;
+        }
+        i {
+          font-size: 14px;
+          text-align: center;
+          width: 25px;
+        }
+      }
+      &:last-child {
+        border-bottom: 1px solid $borderColor;
+      }
+    }
+  }
+}
+
+/*=======  Account Detail CSS  =======*/
+.account_details_form {
+  label {
+    font-size: 15px;
+    font-weight: 400;
+    color: $black;
+  }
+  input {
+    border: 1px solid $borderColor;
+    border-right: 0;
+    background: $light-gray;
+    border-radius: 0;
+    color: $black;
+    font-size: 15px;
+    font-weight: 400;
+    &::placeholder {
+      color: rgba(91, 108, 143, 0.5);
+    }
+    &:focus {
+      box-shadow: none;
+      border: 1px solid $primary-color;
+    }
+  }
+
+  input {
+    height: auto;
+    padding: calc(0.55rem + 2px) calc(0.75rem + 2px);
+  }
+
+  .input-group-text {
+    border: 1px solid $borderColor;
+    border-left: 0;
+    border-radius: 0;
+    color: $primary-color;
+    background: $light-gray;
+  }
+
+  .btn_submit {
+    border-radius: 15px;
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: $white;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+    @include transition(0.4s);
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+    &:hover {
+      color: $primary-color;
+      background: $white;
+    }
+  }
+}
+
+/*=======  Oder View CSS  =======*/
+.order_view_area {
+  text-align: center;
+  box-shadow: 0px 3px 6px #00000029;
+  padding: 30px;
+  .title {
+    font-size: 24px;
+    color: $black;
+    padding-bottom: 15px;
+    font-weight: 500;
+    text-align: center;
+    border-bottom: 1px solid $borderColor;
+
+    span {
+      text-transform: capitalize;
+      color: $primary-color;
+    }
+  }
+  table {
+    width: 100%;
+  }
+  .user-detail {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    td {
+      border: 0;
+      font-size: 14px;
+      color: $black;
+      text-align: left;
+      padding: 10px;
+      &:nth-child(even) {
+        text-align: right;
+      }
+    }
+  }
+  .order-detail {
+    margin-bottom: 40px;
+    border: 1px solid $borderColor;
+
+    th {
+      font-size: 14px;
+      padding: 10px;
+      text-align: center;
+      border: 0;
+      color: $white;
+      border-collapse: collapse;
+      background: $primary-color;
+      font-weight: 500;
+    }
+    td {
+      border-bottom: 1px solid $borderColor;
+      border-right: 0;
+      border-left: 0;
+      font-weight: 500;
+      border-collapse: collapse;
+      padding: 10px;
+      font-size: 14px;
+      p {
+        font-size: 14px;
+        @media #{$sm} {
+          text-align: center;
+        }
+      }
+    }
+  }
+  .main-btn.btn-filled {
+    box-shadow: none;
+    border-radius: 0;
+  }
+}
+
+/*=======  Oder Tracking CSS  =======*/
+.order_tracking {
+  .card {
+    box-shadow: 0px 3px 6px #00000029;
+    border: 0;
+  }
+  .card-header {
+    background: $primary-color;
+    text-align: center;
+    color: $white;
+    font-size: 24px;
+  }
+  .main-btn.btn-filled {
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .steps .step {
+    display: block;
+    width: 100%;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  .steps .step .step-icon-wrap {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+  }
+  .steps .step .step-icon-wrap::before,
+  .steps .step .step-icon-wrap::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 3px;
+    margin-top: -1px;
+    background-color: $borderColor;
+    content: "";
+    z-index: 1;
+  }
+  .steps .step .step-icon-wrap::before {
+    left: 0;
+  }
+  .steps .step .step-icon-wrap::after {
+    right: 0;
+  }
+  .steps .step .step-icon {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #dedede;
+    border-radius: 50%;
+    background-color: $borderColor;
+    color: $black;
+    font-size: 38px;
+    line-height: 81px;
+    z-index: 5;
+  }
+  .steps .step .step-title {
+    margin-top: 16px;
+    margin-bottom: 0;
+    color: $black;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .steps .step:first-child .step-icon-wrap::before {
+    display: none;
+  }
+  .steps .step:last-child .step-icon-wrap::after {
+    display: none;
+  }
+  .steps .step.completed .step-icon-wrap::before,
+  .steps .step.completed .step-icon-wrap::after {
+    background-color: #ee3124;
+  }
+  .steps .step.completed .step-icon {
+    border-color: #ee3124;
+    background-color: #ee3124;
+    color: #fff;
+  }
+  @media (max-width: 576px) {
+    .flex-sm-nowrap .step .step-icon-wrap::before,
+    .flex-sm-nowrap .step .step-icon-wrap::after {
+      display: none;
+    }
+  }
+  @media (max-width: 768px) {
+    .flex-md-nowrap .step .step-icon-wrap::before,
+    .flex-md-nowrap .step .step-icon-wrap::after {
+      display: none;
+    }
+  }
+  @media (max-width: 991px) {
+    .flex-lg-nowrap .step .step-icon-wrap::before,
+    .flex-lg-nowrap .step .step-icon-wrap::after {
+      display: none;
+    }
+  }
+  @media (max-width: 1200px) {
+    .flex-xl-nowrap .step .step-icon-wrap::before,
+    .flex-xl-nowrap .step .step-icon-wrap::after {
+      display: none;
+    }
+  }
+
+  .track_order {
+    color: #fff !important;
+    background: green;
+    padding: 5px;
+    margin-left: 15px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+  }
+  .order_placed_note p {
+    text-align: center;
+    margin: 30px 0;
+    background: #ee3124;
+    color: #fff !important;
+    padding: 20px;
+    font-size: $pfont;
+  }
+}
+
+/*=======  Address Section CSS  =======*/
+
+.billing_address {
+  p {
+    padding-top: 10px;
+  }
+  i {
+    font-size: 15px;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 26px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  input:checked + .slider {
+    background-color: #2196f3;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+}
+
+/*======= Add Address Section CSS  =======*/
+
+.address_form {
+  textarea {
+    height: 150px;
+    padding-top: 25px;
+    box-shadow: 0px 3px 6px #00000020;
+    resize: none;
+    background: $white;
+    padding-left: 50px;
+  }
+  input,
+  select {
+    box-shadow: 0px 3px 6px #00000020;
+    background: $white;
+    height: 60px;
+    padding-left: 50px;
+  }
+  .selectcustomarrowstyle {
+    /* Arrow */
+    appearance: none;
+    background-image: url("../arrowiconcolor.png");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 1rem auto;
+  }
+  .icon {
+    left: 20px;
+    bottom: 31px;
+  }
+  .main-btn.btn-filled {
+    box-shadow: none;
+  }
+  .form-check-input {
+    height: 15px;
+    width: auto;
+  }
+}

@@ -1,0 +1,19 @@
+export const ABOUT_PAGE_API = "/skin-beauty";
+export const IMMUNITY_PAGE_API = "/immunity";
+export const ADVICE_ON_THE_USAGE_PAGE_API = "/usage-advice";
+export const UNIQUE_PAGE_API = "/unique-formula";
+export const SUSTAINABILITY_PAGE_API = "/sustainability";
+export const PACKAGING_PAGE_API = "/packaging";
+export const PRETEND_MARINE_COLLAGEN_PEPTIDES_PAGE_API = "/collagen-peptides";
+export const WHO_WE_ARE_PAGE_API = "/who-we-are";
+export const CELEBRATE_YOU_ARE_PAGE_API = "/celebrate-your-essence";
+export const MEET_THE_CREATOR_PAGE_API = "/creator";
+export const LOYALTY_PROGRAM_PAGE_API = "/loyalty-program";
+export const FAQ_PAGE_API = "/faqs";
+export const BLOG_CATEGORIES = "/home-blog-category";
+export const BLOG_CATEGORIES_LIST = "/home-blog-category-data";
+export const SINGLE_BLOG = "blog-detail";
+export const MEDIA_CATEGORY_LIST = "home-media-category-data";
+export const MEDIA_CATEGORIES = "home-media-category";
+export const CONTACT_API = "contact-us";
+

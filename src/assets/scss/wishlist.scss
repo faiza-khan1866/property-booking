@@ -1,0 +1,370 @@
+/*=======  Wishlist Card CSS  =======*/
+.wishlist_area {
+  .clear_wishlist {
+    text-align: right;
+    padding-bottom: 40px;
+    .main-btn.btn-border {
+      box-shadow: none;
+      border-radius: 0;
+      background: $white;
+      color: $primary-color;
+      font-size: 16px;
+      letter-spacing: 0px;
+      &:hover {
+        background: $primary-color;
+        color: $white;
+      }
+    }
+  }
+  .wishlist-box {
+    box-shadow: 0px 3px 6px #00000029;
+    overflow: hidden;
+    .remove_icon {
+      position: absolute;
+      right: 27px;
+      top: 10px;
+      color: $white;
+      width: 25px;
+      height: 25px;
+      border-radius: 100%;
+      border: 1.5px solid $white;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .wishlist-img {
+      position: relative;
+      height: 260px;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      @media #{$sm} {
+        height: 220px;
+      }
+    }
+    .wishlist-desc {
+      background-color: $white;
+      padding: 1.5rem;
+
+      @media #{$lsm} {
+        padding: 1rem;
+        font-size: 14px;
+      }
+      @media #{$tiny} {
+        padding: 1rem;
+        font-size: 14px;
+      }
+      .wishlist-meta {
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .location {
+          font-size: 16px;
+          letter-spacing: 0px;
+          color: $black;
+        }
+        .price {
+          font-size: 22px;
+          font-weight: 600;
+          color: $primary-color;
+          @media (max-width: 435px) {
+            margin-top: 10px;
+            margin-bottom: 20px;
+          }
+          span {
+            font-size: 18px;
+          }
+        }
+      }
+      .cattype {
+        font-size: 15px;
+        margin-bottom: 10px;
+        color: $main-bg;
+      }
+      .studio {
+        font-size: 15px;
+        margin-bottom: 10px;
+        i {
+          margin-right: 0.5rem;
+          color: $primary-color;
+        }
+      }
+      .sqfeet {
+        hr {
+          border-bottom: 1px solid $main-bg;
+          margin-top: 07px;
+          width: 30%;
+        }
+      }
+
+      h4 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        letter-spacing: 0px;
+        a {
+          color: $primary-color;
+        }
+
+        @media #{$lg} {
+          font-size: 22px;
+        }
+        @media #{$lsm} {
+          font-size: 20px;
+        }
+        @media #{$tiny} {
+          font-size: 20px;
+        }
+      }
+      .main-btn.btn-filled {
+        box-shadow: none;
+        border-radius: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+/*=======  Empty Wishlist CSS  =======*/
+.empaty_wishlist_area {
+  text-align: center;
+  i {
+    font-size: 10rem;
+    color: $primary-color;
+    margin-bottom: 25px;
+  }
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .liststyle {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .main-btn.btn-filled {
+    box-shadow: none;
+  }
+}
+
+/*=======  verfication form CSS  =======*/
+.verfication_form {
+  box-shadow: 0px 3px 6px #00000020;
+  padding: 30px;
+  h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+  p {
+    margin-bottom: 25px;
+  }
+  input {
+    background: $white;
+    height: 60px;
+    padding: 0px 20px;
+    border: 1px solid $main-bg;
+    font-size: 20px;
+  }
+  .main-btn.btn-filled {
+    box-shadow: none;
+    width: 250px;
+  }
+}
+
+/*=======  Login/Register form CSS  =======*/
+
+.login_wrape {
+  box-shadow: 0px 3px 6px #00000020;
+  border-radius: 15px;
+  padding: 2rem;
+  .main-title {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 0.5rem;
+    color: $black;
+    @media #{$xsm} {
+      font-size: 25px;
+      margin-top: 2rem;
+    }
+    @media #{$lsm} {
+      font-size: 25px;
+      margin-top: 2rem;
+    }
+    @media #{$md} {
+      font-size: 28px;
+      margin-top: 2rem;
+    }
+  }
+  hr {
+    border: 2px solid $primary-color;
+    width: 10%;
+    margin: 0 0 2rem 0;
+  }
+  .sign_up {
+    font-size: 14px;
+    font-weight: 400;
+    color: $black;
+    span {
+      border-bottom: 1px solid $primary-color;
+      color: $primary-color;
+      cursor: pointer;
+      margin-left: 1rem;
+    }
+    margin-right: 1rem;
+  }
+  .lost_pass {
+    font-size: 14px;
+    font-weight: 400;
+    color: $primary-color;
+    border-bottom: 1px solid $primary-color;
+    cursor: pointer;
+  }
+  .pass_note {
+    font-size: 14px;
+    font-weight: 400;
+    color: $black;
+  }
+  .verify_sub_title {
+    font-size: 16px;
+    font-weight: 400;
+    color: $black;
+    margin-bottom: 1rem;
+  }
+  label {
+    font-size: 15px;
+    font-weight: 400;
+    color: $black;
+  }
+  input {
+    border: 1px solid $borderColor;
+    border-right: 0;
+    background: $light-gray;
+    border-radius: 0;
+    color: $black;
+    font-size: 15px;
+    font-weight: 400;
+    &::placeholder {
+      color: rgba(91, 108, 143, 0.5);
+    }
+    &:focus {
+      box-shadow: none;
+      border: 1px solid $primary-color;
+    }
+  }
+
+  input {
+    height: auto;
+    padding: calc(0.55rem + 2px) calc(0.75rem + 2px);
+  }
+
+  .input-group-text {
+    border: 1px solid $borderColor;
+    border-left: 0;
+    border-radius: 0;
+    color: $primary-color;
+    background: $light-gray;
+  }
+
+  .btn_submit {
+    border-radius: 15px;
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: $white;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    @include transition(0.4s);
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+    &:hover {
+      color: $primary-color;
+      background: $white;
+    }
+  }
+}
+
+/*=======  Forgot Password form CSS  =======*/
+.forget_password_form {
+  .main-title {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+    color: $black;
+    @media #{$xsm} {
+      font-size: 18px;
+    }
+    @media #{$lsm} {
+      font-size: 18px;
+    }
+    @media #{$md} {
+      font-size: 24px;
+    }
+  }
+  hr {
+    border: 2px solid $primary-color;
+    width: 10%;
+    margin: 0 0 1.5rem 0;
+  }
+  label {
+    font-size: 15px;
+    font-weight: 400;
+    color: $black;
+  }
+  input {
+    border: 1px solid $borderColor;
+    border-right: 0;
+    background: $light-gray;
+    border-radius: 0;
+    color: $black;
+    font-size: 15px;
+    font-weight: 400;
+    &::placeholder {
+      color: rgba(91, 108, 143, 0.5);
+    }
+    &:focus {
+      box-shadow: none;
+      border: 1px solid $primary-color;
+    }
+  }
+
+  input {
+    height: auto;
+    padding: calc(0.55rem + 2px) calc(0.75rem + 2px);
+  }
+
+  .input-group-text {
+    border: 1px solid $borderColor;
+    border-left: 0;
+    border-radius: 0;
+    color: $primary-color;
+    background: $light-gray;
+  }
+
+  .btn_submit {
+    border-radius: 15px;
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: $white;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 0.5rem 2rem;
+    margin-top: 0.5rem;
+    @include transition(0.4s);
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+    &:hover {
+      color: $primary-color;
+      background: $white;
+    }
+  }
+}

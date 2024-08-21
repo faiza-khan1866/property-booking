@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "linkText": "Home",
+    "link": "/"
+  },
+  {
+    "id": 2,
+    "linkText": "About Us",
+    "link": "/about"
+  },
+  {
+    "id": 3,
+    "linkText": "Services",
+    "link": "/services",
+    "child": true,
+    "submenu": [
+      {
+        "id": 21,
+        "link": "/investment-advisory",
+        "linkText": "Investment Advisory"
+      },
+      {
+        "id": 22,
+        "link": "/holiday-homes",
+        "linkText": "Holiday Homes"
+      },
+      {
+        "id": 23,
+        "link": "/interior-design",
+        "linkText": "Interior Design"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "linkText": "Properties",
+    "link": "/properties"
+  },
+  {
+    "id": 5,
+    "linkText": "List Your Property",
+    "link": "/list-your-property"
+  }
+]
